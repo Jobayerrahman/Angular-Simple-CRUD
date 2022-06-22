@@ -1,0 +1,16 @@
+.head-container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgb(96, 96, 146);
+    border-radius: 3px;
+}
+
+.head-container h4 {
+    color: white;
+    font-weight: 400;
+}
+
+.head-button button {
+    margin-right: 4px;
+}

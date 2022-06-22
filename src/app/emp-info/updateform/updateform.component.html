@@ -1,0 +1,19 @@
+<h4> Employee Information Update </h4>
+<form class="form-group" [formGroup]="empForm" (ngSubmit)="empUpdate()">
+    <div class="mb-3">
+        <input class="form-control" type="text" [(ngModel)]="emp.Id" name="id" formControlName='id' hidden />
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" [(ngModel)]="emp.Name" name="name" formControlName='name' />
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="email" [(ngModel)]="emp.Email" name="email" formControlName='email' />
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" [(ngModel)]="emp.Address" name="address" formControlName='address' />
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" [(ngModel)]="emp.Phone" name="phone" formControlName='phone' />
+    </div>
+    <button class="btn btn-success">Submit</button>
+</form>
