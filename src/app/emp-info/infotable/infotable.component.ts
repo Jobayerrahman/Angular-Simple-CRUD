@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 export class InfotableComponent implements OnInit {
 
   emps:any;
+  page: number = 1;
+  perPageItem = 5;
   constructor(private empData:EmpsDataService, private router: Router) {
     this.empData.emps().subscribe(data =>{
       this.emps = data;

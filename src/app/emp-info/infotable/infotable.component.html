@@ -18,7 +18,7 @@
         </thead>
         <tbody>
             <!-- *ngFor="let country of countries; index as i" -->
-            <tr *ngFor="let emp of emps">
+            <tr *ngFor="let emp of emps | paginate: { itemsPerPage:5, currentPage : page}">
                 <th scope="row">
                     <div class="form-check">
                         <label class="form-check-label">
@@ -37,4 +37,10 @@
             </tr>
         </tbody>
     </table>
+    <div class="d-flex justify-content-between">
+        <span>showing  out of {{emps.length}} entries</span>
+        <div>
+            <pagination-controls (pageChange)="page = $event"></pagination-controls>
+        </div>
+    </div>
 </div>

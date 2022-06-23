@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class DatasummaryComponent implements OnInit {
 
   constructor() { }
-  page = 4;
   ngOnInit(): void {
   }
 

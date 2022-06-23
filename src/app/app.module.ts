@@ -7,6 +7,8 @@ import { EmpInfoModule } from './emp-info/emp-info.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
+
+import { NgxPaginationModule } from 'ngx-pagination'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     EmpInfoModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

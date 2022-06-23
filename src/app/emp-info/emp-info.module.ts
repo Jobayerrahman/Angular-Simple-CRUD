@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { UpdateformComponent } from './updateform/updateform.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -19,12 +20,13 @@ import { AppRoutingModule } from '../app-routing.module';
     DatasummaryComponent,
     CreateformComponent,
     HomeComponent,
-    UpdateformComponent
+    UpdateformComponent,
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule,
   ],
   exports: [
     HeaderComponent,
